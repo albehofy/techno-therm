@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="./css/animation.css">
     <base href="/">
     <style>
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 800px;
+            /* اختياري - يمنع كبره زيادة */
+            height: auto;
+            border-radius: 8px;
+            /* optional */
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-width-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
     </style>
 </head>
 
@@ -98,33 +122,29 @@
 
                 <div class="marked-card " role="card">
                     <h3>خدمة التوصيل</h3>
-                    <img src="./images/1515.jpg"
-                        alt="image-4">
+                    <img src="./images/1515.jpg" alt="image-4">
 
                 </div>
                 <div class="marked-card " role="card">
                     <h3>خدمة العملاء</h3>
-                    <img src="./images/1414.jpg"
-                        alt="customer services image-3">
+                    <img src="./images/1414.jpg" alt="customer services image-3">
                 </div>
                 <div class="marked-card " role="card">
                     <h3>الضمان</h3>
-                    <img src="./images/1212.jpg"
-                        alt="image-5">
+                    <img src="./images/1212.jpg" alt="image-5">
                 </div>
                 <div class="marked-card " role="card">
                     <h3>الجودة</h3>
-                    <img src="./images/1313.jpg"
-                        alt="image-6">
+                    <img src="./images/1313.jpg" alt="image-6">
                 </div>
             </div>
         </section>
         <!-- end brand section -->
-        <!-- start header -->
+        <video class="full-width-video" src="./images/video.mp4" autoplay controls muted loop playsinline>
+        </video> <!-- start header -->
         <header>
             <figure>
-                <img src="./images/1616.jpg"
-                    alt="one of techno therm products 'pipe maded of plastic' image-2">
+                <img src="./images/1616.jpg" alt="one of techno therm products 'pipe maded of plastic' image-2">
                 <figcaption>
                     <h2><span>تكنو</span> ثيرم </h2>
                     <p>نحن احد الرواد فى مجال صناعة الادوات الصحية والمواسير حيث اننا نسعي لنكون الافضل دائما ولذلك نعمل
